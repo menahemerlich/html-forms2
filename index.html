@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>הרשמה לקורס</h1>
+        </div>
+        <form action="http://localhost:3000/register" method="post">
+            <label for="fullName">שם מלא:</label><br>
+            <input type="text" id="fullName" name="fullName" placeholder="fullName"required><br>
+            <br>
+            <label for="email">אימייל:</label><br>
+            <input type="email" id="email" , name="email" , placeholder="email"required><br>
+            <br>
+            <label for="age">גיל:</label><br>
+            <input type="number" id="age" name="age" placeholder="age"required><br>
+            <br>
+            <label for="a">זכר</label>
+            <input type="radio" id="a" name="gender" value="זכר" required><br>
+            <label for="b">נקבה</label>
+            <input type="radio" id="b" name="gender" value="נקבה" required><br>
+            <br>
+            <label for="course">קורס מועדף:</label><br>
+            <select name="course" id="course"required>
+                <option value=""></option>
+                <option value="fullaStack">Full Stack</option>
+                <option value="data">Data</option>
+            </select>
+            <br><br>
+            <label for="termsAccepted">אני מאשר את התקנון:</label><br>
+            <input type="checkbox" id="termsAccepted" name="termsAccepted"required><br>
+            <br>
+            <button type="submit">שליחת הטופס</button>
+        </form>
+    </main>
+</body>
+
+</html>
